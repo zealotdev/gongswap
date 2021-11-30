@@ -1,0 +1,45 @@
+@import './colors.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background-image: url('/images/waves.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.main-content {
+  margin-top: 15vh;
+}
+
+.nav {
+  background-color: $navBackground-color;
+}
