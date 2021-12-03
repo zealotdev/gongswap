@@ -43,3 +43,115 @@ a {
 .nav {
   background-color: $navBackground-color;
 }
+
+.button {
+  padding: 0.8rem 1rem;
+  color: white;
+  background-color: #365a67;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2f4e5a;
+    box-shadow: 0.2rem 0.2rem 0.9rem rgba($color: #000000, $alpha: 0.3);
+  }
+}
+
+.tab {
+  background-color: #2b4d5a;
+  width: 100%;
+  border-radius: 0.8rem;
+
+  & .tab-header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+    font-weight: 600;
+    color: white;
+    align-items: center;
+
+    &--left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 0.8rem;
+      background-color: #365a67;
+      cursor: pointer;
+    }
+
+    &--right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-color: #365a67;
+      border-top-right-radius: 0.8rem;
+      cursor: pointer;
+    }
+    & .active {
+      background-color: #2b4d5a;
+    }
+  }
+  .swap-body {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+
+    & .input-field {
+      display: flex;
+      position: relative;
+      margin-bottom: 1.2rem;
+
+      & > input {
+        width: 100%;
+        border-radius: 0.8rem;
+        padding: 1.4rem 1rem;
+        border: 0;
+        text-align: right;
+        background-color: #365a67;
+        font-size: 1.4rem;
+        color: #2b4d5a;
+
+        &::placeholder {
+          color: #2b4d5a;
+        }
+      }
+
+      & > label {
+        position: absolute;
+        top: 0.8rem;
+        left: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 0.8rem;
+        background-color: #dedede;
+        color: #365a67;
+      }
+
+      & > select {
+        position: absolute;
+        top: 0.8rem;
+        left: 0.8rem;
+        padding: 0.4rem 0.2rem;
+        border-radius: 0.8rem;
+        background-color: #dedede;
+        color: #365a67;
+      }
+    }
+    & button {
+      border-radius: 0.6rem;
+      border: 0;
+      padding: 1.2rem 0.4rem;
+      color: #365a67;
+      width: 100%;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
+}

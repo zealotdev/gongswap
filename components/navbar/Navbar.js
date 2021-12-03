@@ -35,7 +35,7 @@ export default function Navbar() {
                   <g
                     id="gong-svgrepo-com"
                     transform="translate(24.000000, 20.000000)"
-                    fill="#D69E2E"
+                    fill="#FFFFFF"
                     fillRule="nonzero"
                   >
                     <path
@@ -48,7 +48,7 @@ export default function Navbar() {
                     fontFamily="Lato-Bold, Lato"
                     fontSize="39"
                     fontWeight="bold"
-                    fill="#D69E2E"
+                    fill="#FFFFFF"
                   >
                     <tspan x="95" y="61">
                       GongSwap
@@ -59,7 +59,6 @@ export default function Navbar() {
             </g>
           </svg>
         </a>
-        {/* TODO: FIXME:   */}
       </Link>
     </nav>
   );
