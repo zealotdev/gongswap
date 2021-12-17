@@ -1,11 +1,19 @@
 import Head from 'next/head';
-import { Main, Navbar } from '../components';
+import tw, { css } from 'twin.macro';
+import {
+  Campaign,
+  Features,
+  Main,
+  Navbar,
+  Roadmap,
+  Showcase,
+} from '../components';
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>On Stop BSC Swap | Top Token Rates and Fees | gongSwap</title>
+        <title>One Stop BSC Swap | Top Token Rates and Fees | gongSwap</title>
         <meta
           name="description"
           content="gongSwap a One Stop BSC Swap Destination"
@@ -13,12 +21,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main css={tw`mx-auto w-5/6 lg:w-4/6`}>
         {/* Header Section */}
         <Navbar />
         {/* Main Section */}
         <Main />
-        {/* Details Section */}
+        {/* Features */}
+        <Showcase />
+        {/* Campaign */}
+        <Campaign />
+        {/* Features */}
+        <Features />
+        {/* Roadmap */}
+        <Roadmap />
         {/* Footer Section */}
       </main>
     </div>

@@ -1,93 +1,96 @@
 import tw, { css } from 'twin.macro';
 import Link from 'next/link';
-import { useState } from 'react';
+
+import { Tab } from '..';
+import { MainComponent, Hero, Button } from './Main.styled.components';
 
 export default function Main() {
-  const [swapTab, setSwapTab] = useState(true);
   return (
-    <div css={tw`w-4/6 mx-auto pt-40 flex justify-between`}>
-      <div
-        css={css`
-          width: 100%;
-          height: 40vh;
-        `}
-      >
-        <h1 css={tw`text-white underline w-5/6 mb-4`}>
-          The One Stop Swap Service
-        </h1>
-        <h3
-          css={css`
-            color: #365a67;
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 4rem;
-          `}
-        >
-          No Extra Fees, No BS, just Swap
-        </h3>
-        <Link href={'/'}>
-          <a className="button">Learn More 👇</a>
-        </Link>
-      </div>
-      <div className="tab">
-        <div className="tab-header">
-          <div
-            className={swapTab ? 'tab-header--left active' : 'tab-header--left'}
-            onClick={() => setSwapTab(true)}
+    <>
+      <MainComponent variant="large">
+        {/* Large Hero */}
+        <Hero variant="large">
+          <h1 css={tw`text-white text-4xl mb-4`}>Limitless Exchange</h1>
+          <h3 css={tw`text-gray-200 text-lg font-light`}>
+            Experience full freedom through a public centralized blockchain
+            exchange{' '}
+          </h3>
+          <p
+            css={css`
+              color: #365a67;
+              font-size: 1rem;
+            `}
           >
-            Swap
+            No Extra Fees, No BS, just Swap
+          </p>
+          <div css={tw`flex space-x-4`}>
+            <button
+              css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500 border-0`}
+            >
+              <Link href={'/'}>
+                <a>Join Airdrop</a>
+              </Link>
+            </button>
+            <button
+              css={tw`py-2 px-3 rounded cursor-pointer border-yellow-600 text-yellow-600 bg-transparent hover:bg-yellow-500 hover:text-white`}
+            >
+              <Link href={'/'}>
+                <a>Join Pre-sale</a>
+              </Link>
+            </button>
+            <button
+              css={tw`py-2 px-3 rounded cursor-pointer border-yellow-600 text-yellow-600 bg-transparent hover:bg-yellow-500 hover:text-white`}
+            >
+              <Link href={'/'}>
+                <a>Roadmap</a>
+              </Link>
+            </button>
           </div>
-          <div
-            className={
-              !swapTab ? 'tab-header--right active' : 'tab-header--right'
-            }
-            onClick={() => setSwapTab(false)}
+        </Hero>
+        <Tab />
+      </MainComponent>
+      {/* Mobile Hero */}
+      <MainComponent>
+        <Hero>
+          <h1 css={tw`text-white text-4xl mb-4`}>Limitless Exchange</h1>
+          <h3 css={tw`text-gray-200 text-lg font-light`}>
+            Experience full freedom through a public centralized blockchain
+            exchange{' '}
+          </h3>
+          <p
+            css={css`
+              color: #365a67;
+              font-size: 1rem;
+            `}
           >
-            Buy
+            No Extra Fees, No BS, just Swap
+          </p>
+          <div css={tw`flex space-x-4`}>
+            <button
+              css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500 border-0`}
+            >
+              <Link href={'/'}>
+                <a>Join Airdrop</a>
+              </Link>
+            </button>
+            <button
+              css={tw`py-2 px-3 rounded cursor-pointer border-yellow-600 text-yellow-600 bg-transparent hover:bg-yellow-500 hover:text-white`}
+            >
+              <Link href={'/'}>
+                <a>Join Pre-sale</a>
+              </Link>
+            </button>
+            <button
+              css={tw`py-2 px-3 rounded cursor-pointer border-yellow-600 text-yellow-600 bg-transparent hover:bg-yellow-500 hover:text-white`}
+            >
+              <Link href={'/'}>
+                <a>Roadmap</a>
+              </Link>
+            </button>
           </div>
-        </div>
-        {swapTab && (
-          <div className="swap-body">
-            <form>
-              <div className="input-field">
-                <input type="number" name="baseCoin" placeholder="0.0" />
-                <select name="baseCoins" id="baseCoins">
-                  <option value="eth">ETH</option>
-                </select>
-              </div>
-              <div className="input-field">
-                <input type="number" name="baseCoin" placeholder="0.0" />
-                <select name="baseCoins" id="baseCoins">
-                  <option value="eth">Select a Token</option>
-                </select>
-              </div>
-              <button>connect to wallet</button>
-            </form>
-          </div>
-        )}
-        {!swapTab && (
-          <div className="swap-body">
-            <form>
-              <div className="input-field">
-                <input
-                  type="number"
-                  name="amount"
-                  id="amount"
-                  placeholder="0.0"
-                />
-                <label htmlFor="amount">GONG</label>
-              </div>
-              <div className="input-field">
-                <input type="number" name="baseCoin" placeholder="0.0" />
-                <select name="baseCoins" id="baseCoins">
-                  <option value="eth">Select a Token</option>
-                </select>
-              </div>
-              <button>Buy</button>
-            </form>
-          </div>
-        )}
-      </div>
-    </div>
+        </Hero>
+        <Tab />
+      </MainComponent>
+    </>
   );
 }
