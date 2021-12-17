@@ -8,6 +8,7 @@ import {
   Roadmap,
   Showcase,
   Tokenomics,
+  Footer,
 } from '../components';
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
         {/* Roadmap */}
         <Roadmap />
         {/* Footer Section */}
+        <Footer />
       </main>
     </div>
   );

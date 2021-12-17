@@ -7,3 +7,4 @@ export { default as Campaign } from './campaign/Campaign';
 export { default as Features } from './features/Features';
 export { default as Roadmap } from './rouadmap/Roadmap';
 export { default as Tokenomics } from './tokenomics/Tokenomics';
+export { default as Footer } from './footer/Footer';
