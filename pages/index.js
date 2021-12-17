@@ -7,6 +7,7 @@ import {
   Navbar,
   Roadmap,
   Showcase,
+  Tokenomics,
 } from '../components';
 
 export default function Home() {
@@ -32,6 +33,8 @@ export default function Home() {
         <Campaign />
         {/* Features */}
         <Features />
+        {/* Tokenomics */}
+        <Tokenomics />
         {/* Roadmap */}
         <Roadmap />
         {/* Footer Section */}
