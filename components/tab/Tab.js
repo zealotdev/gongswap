@@ -47,16 +47,13 @@ export default function Tab() {
           <div className="swap-body">
             <form>
               <div className="input-field">
-                <input
-                  type="number"
-                  name="amount"
-                  id="amount"
-                  placeholder="0.0"
-                />
-                <label htmlFor="amount">GONG</label>
+                <TextInput type="number" name="baseCoin" placeholder="0.0" />
+                <select name="baseCoins" id="baseCoins">
+                  <option value="eth">ETH</option>
+                </select>
               </div>
               <div className="input-field">
-                <input type="number" name="baseCoin" placeholder="0.0" />
+                <TextInput type="number" name="baseCoin" placeholder="0.0" />
                 <select name="baseCoins" id="baseCoins">
                   <option value="eth">Select a Token</option>
                 </select>
@@ -88,13 +85,13 @@ export default function Tab() {
           <div className="swap-body">
             <form>
               <div className="input-field">
-                <input type="number" name="baseCoin" placeholder="0.0" />
+                <TextInput type="number" name="baseCoin" placeholder="0.0" />
                 <select name="baseCoins" id="baseCoins">
                   <option value="eth">ETH</option>
                 </select>
               </div>
               <div className="input-field">
-                <input type="number" name="baseCoin" placeholder="0.0" />
+                <TextInput type="number" name="baseCoin" placeholder="0.0" />
                 <select name="baseCoins" id="baseCoins">
                   <option value="eth">Select a Token</option>
                 </select>
@@ -107,16 +104,13 @@ export default function Tab() {
           <div className="swap-body">
             <form>
               <div className="input-field">
-                <input
-                  type="number"
-                  name="amount"
-                  id="amount"
-                  placeholder="0.0"
-                />
-                <label htmlFor="amount">GONG</label>
+                <TextInput type="number" name="baseCoin" placeholder="0.0" />
+                <select name="baseCoins" id="baseCoins">
+                  <option value="eth">ETH</option>
+                </select>
               </div>
               <div className="input-field">
-                <input type="number" name="baseCoin" placeholder="0.0" />
+                <TextInput type="number" name="baseCoin" placeholder="0.0" />
                 <select name="baseCoins" id="baseCoins">
                   <option value="eth">Select a Token</option>
                 </select>

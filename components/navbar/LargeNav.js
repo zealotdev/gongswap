@@ -18,41 +18,43 @@ export default function LargeNav() {
       </Link>
       <ul css={tw`flex list-none space-x-8 text-yellow-600`}>
         <li>
-          <Link href="/">
+          <Link href={'/'}>
             <a css={tw`cursor-pointer`}>Home</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href={'/'}>
             <a>Tokenomics</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href={'/'}>
             <a>Roadmap</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href={'/'}>
             <a>Swap</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href={'/'}>
             <a>NFTs</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href={'/'}>
             <a>IDO</a>
           </Link>
         </li>
         <li>
-          <Link href="">
-            <a
-              css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500`}
-            >
-              Join Airdrop
+          <Link href={'/'}>
+            <a>
+              <button
+                css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500 border-0`}
+              >
+                Join Airdrop
+              </button>
             </a>
           </Link>
         </li>

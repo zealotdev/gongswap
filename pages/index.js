@@ -1,6 +1,13 @@
 import Head from 'next/head';
 import tw, { css } from 'twin.macro';
-import { Main, Navbar } from '../components';
+import {
+  Campaign,
+  Features,
+  Main,
+  Navbar,
+  Roadmap,
+  Showcase,
+} from '../components';
 
 export default function Home() {
   return (
@@ -14,13 +21,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main css={tw`mx-auto w-5/6 md:w-4/6`}>
+      <main css={tw`mx-auto w-5/6 lg:w-4/6`}>
         {/* Header Section */}
         <Navbar />
         {/* Main Section */}
-        {/* <Main /> */}
-        home
-        {/* Details Section */}
+        <Main />
+        {/* Features */}
+        <Showcase />
+        {/* Campaign */}
+        <Campaign />
+        {/* Features */}
+        <Features />
+        {/* Roadmap */}
+        <Roadmap />
         {/* Footer Section */}
       </main>
     </div>

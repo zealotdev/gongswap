@@ -16,6 +16,8 @@ export const TextInput = styled.input(() => [
       border-radius: 0.8rem;
       padding: 1.4rem 1rem;
       border: 0;
-      text-align: right;`,
-  tw` rounded-lg ring-4 border-none`,
+      text-align: right;
+      
+      `,
+  tw` rounded-lg border-none`,
 ]);
