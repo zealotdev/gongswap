@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Features() {
   return (
     <div css={tw`mt-20 md:mt-32`}>
-      <h4 css={tw`text-gray-600 font-mono`}>Public Owned.</h4>
+      <h4 css={tw`text-gray-500 font-mono text-2xl`}>Public Owned.</h4>
       {/* For Large Screen */}
       <div css={tw`hidden md:flex justify-between`}>
         <div css={tw`flex flex-col align-middle text-center w-1/6 space-y-2`}>

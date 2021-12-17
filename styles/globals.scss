@@ -183,6 +183,42 @@ a {
     height: 1.4rem;
     width: 0.2rem;
     background-color: #aa6d2d;
+    border-radius: 0.4rem;
+  }
+}
+
+.beacon-mobile {
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: #aa6d2d;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.9rem;
+    height: 0.4rem;
+    width: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: #aa6d2d;
+  }
+}
+
+.beacon-mobile__active {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -0.015rem;
+    height: 0.2rem;
+    width: 0.6rem;
+    border-radius: 0.4rem;
+    background-color: #aa6d2d;
   }
 }
 

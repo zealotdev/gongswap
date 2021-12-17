@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 
 const mainVariant = {
-  large: tw`hidden md:flex mx-auto pt-40 justify-between`,
+  large: tw`hidden md:flex mx-auto pt-24 justify-between`,
   mobile: tw`flex-col space-y-16 md:hidden mt-10`,
 };
 

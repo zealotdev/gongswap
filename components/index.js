@@ -6,3 +6,4 @@ export { default as Showcase } from './showcase/Showcase';
 export { default as Campaign } from './campaign/Campaign';
 export { default as Features } from './features/Features';
 export { default as Roadmap } from './rouadmap/Roadmap';
+export { default as Tokenomics } from './tokenomics/Tokenomics';
