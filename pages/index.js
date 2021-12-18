@@ -20,7 +20,7 @@ export default function Home() {
           name="description"
           content="gongSwap a One Stop BSC Swap Destination"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
 
       <main css={tw`mx-auto w-5/6 lg:w-4/6`}>
