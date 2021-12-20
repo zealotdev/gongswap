@@ -15,14 +15,8 @@ export default function Home() {
   return (
     <div>
       <Head key={'index'}>
-        <title>
-          One Stop BSC Swap | Top Token Rates and Fees | Experience full freedom
-          through a public centralized blockchain exchange | gongSwap
-        </title>
-        <meta
-          name="description"
-          content="gongSwap a One Stop BSC Swap Destination"
-        />
+        <title>One Stop BSC Swap | Top Token Rates and Fees | gongSwap</title>
+
         <meta
           name="description"
           content="One Stop BSC Swap | Top Token Rates and Fees | Exchange gongToken with other crypto assets instantaneously.| Experience full freedom through a public centralized blockchain exchange."
@@ -30,14 +24,13 @@ export default function Home() {
         <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="One Stop BSC Swap | Top Token Rates and Fees | Experience full freedom through a public centralized blockchain
-            exchange | gongSwap "
+          content="One Stop BSC Swap | Top Token Rates and Fees | gongSwap"
         />
         <meta property="og:site_name" content="gongSwap" />
         <meta property="og:url" content="https://gongswap.finance" />
         <meta
           property="og:description"
-          content="One Stop BSC Swap | Top Token Rates and Fees | Exchange gongToken with other crypto assets instantaneously.| Experience full freedom through a public centralized blockchain exchange"
+          content="One Stop BSC Swap | Top Token Rates and Fees | Exchange gongToken with other crypto assets instantaneously.| Experience full freedom through a public decentralized blockchain exchange"
         />
         <link rel="canonical" href="https://gongswap.finance" />
 
