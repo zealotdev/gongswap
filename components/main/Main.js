@@ -14,7 +14,7 @@ export default function Main() {
             Limitless Exchange On the Go
           </h1>
           <h2 css={tw`text-gray-200 text-lg font-light`}>
-            Experience full freedom through a public centralized blockchain
+            Experience full freedom through a public decentralized blockchain
             exchange{' '}
           </h2>
           <p
