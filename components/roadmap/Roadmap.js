@@ -6,7 +6,7 @@ export default function Roadmap() {
 
   return (
     <div css={tw`mt-20 md:mt-32`} id="roadmap">
-      <h4 css={tw`text-gray-500 font-mono text-2xl`}>Roadmap.</h4>
+      <h3 css={tw`text-gray-500 font-mono text-2xl`}>Roadmap.</h3>
       {/* For large Screen */}
       <div css={tw`hidden md:block`}>
         {/* Headers */}

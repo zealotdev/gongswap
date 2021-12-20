@@ -11,7 +11,7 @@ export default function Showcase() {
         className="feature-box"
         css={tw`text-right border-2 justify-end rounded flex-col p-2 py-1 text-gray-200 shadow-xl`}
       >
-        <h4 css={tw` text-xl`}>SWAP</h4>
+        <h3 css={tw` text-xl`}>SWAP</h3>
         <ul css={tw`list-none text-right font-light`}>
           <li>Lorem ipsum dolor sit.</li>
           <li>Lorem ipsum dolor sit.</li>
@@ -25,7 +25,7 @@ export default function Showcase() {
         className="feature-box"
         css={tw`text-right border-2 justify-end rounded flex-col p-2 text-gray-200 shadow-xl`}
       >
-        <h4 css={tw` text-xl`}>NFT</h4>
+        <h3 css={tw` text-xl`}>NFT</h3>
         <ul css={tw`list-none text-right font-light`}>
           <li>Lorem ipsum dolor sit.</li>
           <li>Lorem ipsum dolor sit.</li>
@@ -39,7 +39,7 @@ export default function Showcase() {
         className="feature-box"
         css={tw`text-right border-2 justify-end rounded flex-col p-2 text-gray-200 shadow-xl`}
       >
-        <h4 css={tw` text-xl`}>IDO</h4>
+        <h3 css={tw` text-xl`}>IDO</h3>
         <ul css={tw`list-none text-right font-light`}>
           <li>Lorem ipsum dolor sit.</li>
           <li>Lorem ipsum dolor sit.</li>
