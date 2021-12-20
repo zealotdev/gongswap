@@ -14,12 +14,29 @@ import {
 export default function Home() {
   return (
     <div>
-      <Head>
+      <Head key={'index'}>
         <title>One Stop BSC Swap | Top Token Rates and Fees | gongSwap</title>
         <meta
           name="description"
           content="gongSwap a One Stop BSC Swap Destination"
         />
+        <meta
+          name="description"
+          content="One Stop BSC Swap | Top Token Rates and Fees | Exchange gongToken with other crypto assets instantaneously."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="One Stop BSC Swap | Top Token Rates and Fees | gongSwap"
+        />
+        <meta property="og:site_name" content="gongSwap" />
+        <meta property="og:url" content="https://gongswap.finance" />
+        <meta
+          property="og:description"
+          content="One Stop BSC Swap | Top Token Rates and Fees | Exchange gongToken with other crypto assets instantaneously"
+        />
+        <link rel="canonical" href="https://gongswap.finance" />
+
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
