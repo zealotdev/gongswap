@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Campaign() {
   return (
-    <div css={tw`mt-20 md:mt-32`}>
+    <div css={tw`mt-20 md:mt-32`} id="campaign">
       {/* Airdrop Campaign */}
 
       <Link href={'/'}>

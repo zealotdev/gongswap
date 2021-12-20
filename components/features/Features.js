@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Features() {
   return (
-    <div css={tw`mt-20 md:mt-32`}>
+    <div css={tw`mt-20 md:mt-32`} id="features">
       <h4 css={tw`text-gray-500 font-mono text-2xl`}>Public Owned.</h4>
       {/* For Large Screen */}
       <div css={tw`hidden md:flex justify-between`}>

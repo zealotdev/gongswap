@@ -2,10 +2,10 @@ import tw, { css } from 'twin.macro';
 import { useState } from 'react';
 
 export default function Roadmap() {
-  const [activePhase, setActivePhase] = useState(2);
+  const [activePhase, setActivePhase] = useState(0);
 
   return (
-    <div css={tw`mt-20 md:mt-32`}>
+    <div css={tw`mt-20 md:mt-32`} id="roadmap">
       <h4 css={tw`text-gray-500 font-mono text-2xl`}>Roadmap.</h4>
       {/* For large Screen */}
       <div css={tw`hidden md:block`}>
@@ -39,7 +39,7 @@ export default function Roadmap() {
       <div css={tw`md:hidden flex`}>
         {/* Headers */}
         <ul
-          css={tw`flex flex-col list-none justify-between text-gray-200 text-sm p-0 w-3/6`}
+          css={tw`flex flex-col list-none justify-between text-gray-200 text-xs p-0 w-3/6`}
         >
           {ContentList.map((phase) => {
             return (

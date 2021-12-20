@@ -5,6 +5,7 @@ export default function Showcase() {
   return (
     <div
       css={tw`mt-20 md:mt-32 flex-col space-y-6 md:space-y-0 md:flex md:flex-row md:justify-between`}
+      id="showcase"
     >
       <div
         className="feature-box"
