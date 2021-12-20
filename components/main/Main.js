@@ -10,11 +10,13 @@ export default function Main() {
       <MainComponent variant="large">
         {/* Large Hero */}
         <Hero variant="large">
-          <h1 css={tw`text-white text-4xl mb-4`}>Limitless Exchange</h1>
-          <h3 css={tw`text-gray-200 text-lg font-light`}>
+          <h1 css={tw`text-white text-4xl mb-4`}>
+            Limitless Exchange On the Go
+          </h1>
+          <h2 css={tw`text-gray-200 text-lg font-light`}>
             Experience full freedom through a public centralized blockchain
             exchange{' '}
-          </h3>
+          </h2>
           <p
             css={css`
               color: #365a67;
@@ -52,11 +54,13 @@ export default function Main() {
       {/* Mobile Hero */}
       <MainComponent>
         <Hero>
-          <h1 css={tw`text-white text-4xl mb-4`}>Limitless Exchange</h1>
-          <h3 css={tw`text-gray-200 text-lg font-light`}>
+          <h1 css={tw`text-white text-4xl mb-4`}>
+            Limitless Exchange On the Go
+          </h1>
+          <h2 css={tw`text-gray-200 text-lg font-light`}>
             Experience full freedom through a public centralized blockchain
             exchange{' '}
-          </h3>
+          </h2>
           <p
             css={css`
               color: #365a67;
