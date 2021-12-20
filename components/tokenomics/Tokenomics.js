@@ -4,7 +4,7 @@ import { Pie } from 'react-chartjs-2';
 
 export default function Tokenomics() {
   return (
-    <div css={tw`mt-20 md:mt-32`}>
+    <div css={tw`mt-20 md:mt-32`} id="tokenomics">
       <h4 css={tw`text-gray-500 font-mono text-2xl`}>Tokenomics.</h4>
       <div>
         <div

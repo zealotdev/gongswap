@@ -48,12 +48,12 @@ export default function MobileNav() {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/#tokenomics">
               <a>Tokenomics</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/#roadmap">
               <a>Roadmap</a>
             </Link>
           </li>

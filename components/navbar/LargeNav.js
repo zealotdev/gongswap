@@ -17,18 +17,18 @@ export default function LargeNav() {
         </a>
       </Link>
       <ul css={tw`flex list-none space-x-8 text-yellow-600`}>
-        <li>
+        <li css={tw`cursor-pointer`}>
           <Link href={'/'}>
             <a css={tw`cursor-pointer`}>Home</a>
           </Link>
         </li>
         <li>
-          <Link href={'/'}>
+          <Link href={'/#tokenomics'}>
             <a>Tokenomics</a>
           </Link>
         </li>
         <li>
-          <Link href={'/'}>
+          <Link href={'/#roadmap'}>
             <a>Roadmap</a>
           </Link>
         </li>
