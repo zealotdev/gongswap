@@ -19,24 +19,6 @@ a {
   box-sizing: border-box;
 }
 
-.main-wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -10;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 15vh;
-    background-image: url('/images/waves.svg');
-    background-repeat: no-repeat;
-  }
-}
-
 .main-content {
   margin-top: 15vh;
 }
