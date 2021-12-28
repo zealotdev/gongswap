@@ -36,6 +36,7 @@ export default function Home() {
           name="google-site-verification"
           content="l8xd_SlrG3MnuGJ_QMXzfVmK-4VnJTCTH3wbmdPVP2k"
         />
+        <meta name="yandex-verification" content="3bec31bb34c3b5e2" />
         <link rel="canonical" href="https://gongswap.finance" />
 
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
