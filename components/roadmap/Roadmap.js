@@ -18,6 +18,7 @@ export default function Roadmap() {
                   activePhase == phase.id ? 'beacon beacon__active' : 'beacon'
                 }
                 key={phase.id}
+                css={phase.active ? tw`underline` : ``}
                 onClick={() => setActivePhase(phase.id)}
               >
                 {phase.name}
@@ -28,11 +29,24 @@ export default function Roadmap() {
         {/* Content */}
         <div
           className="roadmap-content"
-          css={tw`mt-12 w-full mx-auto py-12 px-10 rounded text-gray-300`}
+          css={tw` w-full py-3 px-1 mt-10 rounded text-gray-300`}
         >
-          <div>
-            {ContentList.filter((el) => el.id == activePhase)[0].content}
-          </div>
+          <ol
+            css={tw`list-disc flex flex-col space-y-5 text-sm text-yellow-600`}
+          >
+            {ContentList.filter((el) => el.id == activePhase)[0].content.map(
+              (item) => {
+                return (
+                  <li
+                    key={item.text}
+                    css={item.completed ? tw`underline` : tw``}
+                  >
+                    {item.text}
+                  </li>
+                );
+              }
+            )}
+          </ol>
         </div>
       </div>
       {/* For Mobile Screen */}
@@ -50,6 +64,7 @@ export default function Roadmap() {
                     : 'beacon-mobile'
                 }
                 key={phase.id}
+                css={phase.active ? tw`underline` : ``}
                 onClick={() => setActivePhase(phase.id)}
               >
                 {phase.name}
@@ -60,11 +75,17 @@ export default function Roadmap() {
         {/* Content */}
         <div
           className="roadmap-content"
-          css={tw` w-full py-12 px-10 rounded text-gray-300`}
+          css={tw` w-full px-1 rounded text-gray-300`}
         >
-          <div>
-            {ContentList.filter((el) => el.id == activePhase)[0].content}
-          </div>
+          <ol
+            css={tw`list-disc flex flex-col space-y-5 text-sm text-yellow-600`}
+          >
+            {ContentList.filter((el) => el.id == activePhase)[0].content.map(
+              (item) => {
+                return <li key={item.text}>{item.text}</li>;
+              }
+            )}
+          </ol>
         </div>
       </div>
     </div>
@@ -75,25 +96,132 @@ const ContentList = [
   {
     id: 0,
     name: 'Phase One',
-    content:
-      'Phase One: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo vel, laboriosam porro maxime non.',
+    active: true,
+    content: [
+      { text: 'Token Creation', completed: true },
+      { text: 'Ideation of Gongswap', completed: true },
+      { text: 'Website Launching', completed: true },
+      { text: 'Community Development', completed: false },
+      { text: 'Project spread awareness', completed: false },
+      { text: 'Swap Development Initiated', completed: false },
+      { text: 'NFT Development', completed: false },
+      { text: 'IDO Research', completed: false },
+    ],
   },
   {
     id: 1,
     name: 'Phase Two',
-    content:
-      'Phase Two: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo vel, laboriosam porro maxime non.',
+    active: false,
+    content: [
+      { text: 'Airdrop Launching', completed: false },
+      { text: '10k Social Media Target', completed: false },
+      { text: 'Project Briefing', completed: false },
+      { text: 'Intense Project Marketing', completed: false },
+      { text: 'Swap Partnership Recruitment', completed: false },
+      { text: 'CEX Listing Research', completed: false },
+      { text: 'GONG Contract Auditing', completed: false },
+    ],
   },
   {
     id: 2,
     name: 'Phase Three',
-    content:
-      'Phase Three: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo vel, laboriosam porro maxime non.',
+    active: false,
+    content: [
+      { text: '15k Social Media Target', completed: false },
+      { text: 'PreSales Launching', completed: false },
+      { text: 'Hotbit Listing', completed: false },
+      { text: 'Gongswap DEX Launching', completed: false },
+      { text: 'Coingecko Listing', completed: false },
+      { text: 'Coinmarketcap Listing', completed: false },
+      { text: 'Shilling Platforms Listing', completed: false },
+      {
+        text: 'NFT Minting Platform and Marketplace on Testnet',
+        completed: false,
+      },
+      { text: 'Holders Contest Competitions', completed: false },
+      { text: 'Burning Event', completed: false },
+    ],
   },
   {
     id: 3,
     name: 'Phase Four',
-    content:
-      'Phase Four: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo vel, laboriosam porro maxime non.',
+    active: false,
+    content: [
+      { text: '30k Social Media Target', completed: false },
+      { text: '10k Holders Target', completed: false },
+      { text: 'NFT Marketplace Launching', completed: false },
+      { text: 'GONG NFTs Launched', completed: false },
+      { text: 'Website Redesign', completed: false },
+      {
+        text: 'IDO Development Initiated',
+        completed: false,
+      },
+      {
+        text: 'GongGames on Testnet',
+        completed: false,
+      },
+      {
+        text: 'Trading Competition',
+        completed: false,
+      },
+      {
+        text: 'NFT Trading on Gongswap',
+        completed: false,
+      },
+      {
+        text: 'Gongverse Research',
+        completed: false,
+      },
+      {
+        text: 'Gongswap DEX Contract Auditing',
+        completed: false,
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: 'Phase Five',
+    active: false,
+    content: [
+      {
+        text: 'Gongswap Games Launching',
+        completed: false,
+      },
+      {
+        text: 'Security Improvements',
+        completed: false,
+      },
+      {
+        text: 'Pancake Swap Liquidity addition',
+        completed: false,
+      },
+      {
+        text: 'Charity Platform Initiated',
+        completed: false,
+      },
+      {
+        text: 'More CEX Listing',
+        completed: false,
+      },
+      {
+        text: 'Gongverse Development Initiated',
+        completed: false,
+      },
+      {
+        text: 'GongGames on Testnet',
+        completed: false,
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: 'Phase Six',
+    active: false,
+    content: [
+      {
+        text: 'Intense Marketing',
+        completed: false,
+      },
+    ],
   },
 ];
