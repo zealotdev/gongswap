@@ -32,6 +32,10 @@ export default function Home() {
           property="og:description"
           content="One Stop BSC Swap | Top Token Rates and Fees | Exchange gongToken with other crypto assets instantaneously.| Experience full freedom through a public decentralized blockchain exchange"
         />
+        <meta
+          name="google-site-verification"
+          content="l8xd_SlrG3MnuGJ_QMXzfVmK-4VnJTCTH3wbmdPVP2k"
+        />
         <link rel="canonical" href="https://gongswap.finance" />
 
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
