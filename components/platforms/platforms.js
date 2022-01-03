@@ -2,7 +2,9 @@ import tw, { css } from 'twin.macro';
 
 export default function Platforms() {
   return (
-    <div css={tw`mt-20 md:mt-32 flex justify-between`}>
+    <div
+      css={tw`mt-20 md:mt-32 flex flex-col md:flex md:flex-row items-center space-y-6 md:space-y-0  md:justify-between`}
+    >
       <a href="">
         <svg
           width="134px"

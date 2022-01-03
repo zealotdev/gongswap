@@ -39,7 +39,7 @@ export default function Roadmap() {
                 return (
                   <li
                     key={item.text}
-                    css={item.completed ? tw`underline` : tw``}
+                    className={item.completed ? 'stage--active' : ''}
                   >
                     {item.text}
                   </li>
