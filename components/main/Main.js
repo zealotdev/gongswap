@@ -30,7 +30,7 @@ export default function Main() {
               css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500 border-0`}
             >
               <Link href={'/'}>
-                <a>Join Airdrop</a>
+                <a>Claim Airdrop</a>
               </Link>
             </button>
             <button
@@ -74,7 +74,7 @@ export default function Main() {
               css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500 border-0`}
             >
               <Link href={'/'}>
-                <a>Join Airdrop</a>
+                <a>Claim Airdrop</a>
               </Link>
             </button>
             <button
