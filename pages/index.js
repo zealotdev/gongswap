@@ -9,6 +9,8 @@ import {
   Showcase,
   Tokenomics,
   Footer,
+  Socials,
+  Platforms,
 } from '../components';
 
 export default function Home() {
@@ -88,6 +90,10 @@ export default function Home() {
         <Navbar />
         {/* Main Section */}
         <Main />
+        {/* Platforms */}
+        <Platforms />
+        {/* Social Links */}
+        <Socials />
         {/* Features */}
         <Showcase />
         {/* Campaign */}

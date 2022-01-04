@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function LargeNav() {
   return (
-    <div css={tw`hidden md:flex justify-between`}>
+    <div css={tw`hidden md:flex justify-between z-50`}>
       <Link href={'/'}>
         <a css={tw`flex items-center text-yellow-600 cursor-pointer`}>
           <Image

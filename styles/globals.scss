@@ -8,6 +8,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   scroll-behavior: smooth;
+  z-index: 1;
 }
 
 a {
@@ -209,6 +210,14 @@ a {
   background-color: #2f4e5a;
 }
 
+.stage--active {
+  color: #223843;
+  font-weight: 600;
+}
 .copy-body {
   background-color: #2f4e5a;
+}
+
+#tsparticles {
+  z-index: -10;
 }

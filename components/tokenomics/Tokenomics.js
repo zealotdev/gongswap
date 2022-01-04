@@ -19,6 +19,7 @@ export default function Tokenomics() {
             className="copy-body"
             type="text"
             value={address}
+            readOnly
           />
           <button
             css={tw`block mt-2 md:mt-0 md:absolute md:right-2 md:top-1/4 rounded border-0 p-1 bg-yellow-600 text-gray-200 cursor-pointer active:bg-yellow-400 active:text-gray-600`}
