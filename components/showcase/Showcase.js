@@ -4,18 +4,18 @@ import tw, { css } from 'twin.macro';
 export default function Showcase() {
   return (
     <div css={tw`mt-20 md:mt-32`}>
-      <h3 css={tw`text-gray-500 font-mono text-2xl`}>GONGSwap Ecosystem.</h3>
+      <h3 css={tw`text-gray-500 font-mono text-2xl`}>GONG Swap Ecosystem.</h3>
       <div
         css={tw` flex-col space-y-6 md:space-x-4 md:space-y-0 md:flex md:flex-row md:justify-between`}
         id="showcase"
       >
         <div
           className="feature-box"
-          css={tw`text-right border-2 justify-end rounded flex-col p-2 py-1 text-gray-200 shadow-xl md:w-4/12`}
+          css={tw`text-right border-2 justify-end rounded flex-col p-6 text-gray-200 shadow-xl md:w-4/12`}
         >
           <h3 css={tw` text-xl`}>SWAP</h3>
           <div css={tw`list-none text-right font-light`}>
-            <p css={tw`text-justify w-10/12 h-28`}>
+            <p css={tw`text-justify h-28`}>
               Swap your favorite tokens,right on our onboard swap feature.
             </p>
           </div>
@@ -25,7 +25,7 @@ export default function Showcase() {
         </div>
         <div
           className="feature-box"
-          css={tw`text-right border-2 justify-end rounded flex-col p-2 text-gray-200 shadow-xl md:w-4/12`}
+          css={tw`text-right border-2 justify-end rounded flex-col p-6 text-gray-200 shadow-xl md:w-4/12`}
         >
           <h3 css={tw` text-xl`}>NFT</h3>
           <div css={tw`list-none text-right font-light`}>
@@ -40,7 +40,7 @@ export default function Showcase() {
         </div>
         <div
           className="feature-box"
-          css={tw`text-right border-2 justify-end rounded flex-col p-2 text-gray-200 shadow-xl md:w-4/12`}
+          css={tw`text-right border-2 justify-end rounded flex-col p-6 text-gray-200 shadow-xl md:w-4/12`}
         >
           <h3 css={tw` text-xl`}>IDO</h3>
           <div css={tw`list-none text-right font-light`}>
