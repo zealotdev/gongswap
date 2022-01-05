@@ -12,6 +12,7 @@ export const MainWavesLarge = styled.div(() => [
     height: 15vh;
     background-image: url('/images/waves.svg');
     background-repeat: no-repeat;
+    background-size:contain;
   }`,
 ]);
 
@@ -27,5 +28,6 @@ export const MainWavesSmall = styled.div(() => [
     height: 15vh;
     background-image: url('/images/small-waves.svg');
     background-repeat: no-repeat;
+    background-size:contain;
   }`,
 ]);
