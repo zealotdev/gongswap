@@ -14,7 +14,7 @@ export default function Socials() {
   return (
     <div css={tw`mt-20 md:mt-32 flex flex-col w-full space-y-6 md:space-y-0`}>
       <h3 css={tw`text-gray-500 text-center font-mono md:text-2xl`}>
-        Tag Along
+        Join Our Social Medias
       </h3>
       <div css={tw`hidden md:block mx-auto space-x-16`}>
         <a
